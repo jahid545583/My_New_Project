@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 1st Projet </title>
+    <script src="index.js"></script>
+</head>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d7dada;
+
+}
+a {
+    color: darkblue;
+    border-radius: 5px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: gray;
+}
+header {
+    background-color: honeydew;
+    height: 450px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #87a75c;
+}
+nav > h1 {
+  color: darkblue;
+  position: absolute;
+  font-size: 35px;
+  left: 50px;
+  top:35px;
+}
+.NFooD {
+  color: darkorange;
+}
+nav > ul {
+  list-style: none;
+  float: right;
+  margin-right: 70px;
+  margin-top: 40px;
+}
+nav > ul > li {
+  float: left;
+  margin-left: 10px;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #90fa00;
+  font-weight: bold;
+}
+nav > ul > li > a:hover {
+  background-color: #ff9d0c;
+}
+.content {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content > p {
+    text-align: center;
+}
+.first_line {
+    font-size: 40px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first_line_word {
+    color: darkorange;
+}
+.h_c {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.content > p > a {
+    text-decoration: none;
+    border: 2px solid darkblue;
+    padding: 5px 10px;
+    color: darkblue;
+}
+.Shop_btn:hover {
+  background-color: darkblue;
+  color: darkorange;
+  font-weight: bold;
+}
+
+/*<<<<<<<<<<<<*/
+  /*Features*/
+/*<<<<<<<<<<<<*/
+.features {
+    height: 450px;
+    width: 100%;
+    position: relative;
+}
+.o_f {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+.second {
+    background-color: darkorange;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.all_services {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 9%;
+}
+#card {
+    width: 30%;
+    height: 350px;
+    background-color: honeydew;
+    float: left;
+    margin-right: 15px;
+    border: 5px solid hsl(0, 0%, 100%);
+    box-shadow: 2px 5px 8px gray;
+    border-radius: 5px;
+}
+#card:hover {
+  background: darkorange;
+  transition-duration: 1.5s;
+  width: 32%;
+  height: 360px;
+}
+#card:hover > p {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+#card:hover > p > a {
+  text-shadow: none;
+}
+/*a:hover {
+  background: linear-gradient(darkorange,red);
+  
+}*/
+/*<<<<<<<<<<<<*/
+  /*Product*/
+/*<<<<<<<<<<<<*/
+.product {
+    height: 800px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    /*background-color: red;*/
+}
+.o_p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+.third {
+    background-color: darkorange;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.all_products {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 9%;
+}
+#card2 {
+    width: 30%;
+    height: 350px;
+    background-color: honeydew;
+    float: left;
+    margin-right: 15px;
+    border: 5px solid hsl(0, 0%, 100%);
+    box-shadow: 2px 5px 8px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#card2:hover {
+  background-color: darkorange;
+  transition: 1.5s;
+}
+/*<<<<<<<<<<<<*/
+  /*Product Categories*/
+/*<<<<<<<<<<<<*/
+.product_categories {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    /*background-color: red;*/
+}
+.p_c {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+#card3 > h1 {
+    font-size: 20px;
+}
+#card3 > p {
+    font-size: 14px;
+}
+.forth {
+    background-color: darkorange;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.all_products_categories {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 9%;
+}
+#card3 {
+    width: 22%;
+    height: 350px;
+    background-color: honeydew;
+    float: left;
+    margin-right: 15px;
+    border: 5px solid hsl(0, 0%, 100%);
+    box-shadow: 2px 5px 8px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#card3:hover {
+  background-color: grey;
+  transition: 1.5s;
+}
+#card3:hover > p {
+  color: white;
+}
+/*<<<<<<<<<<<<*/
+  /*Customers Review*/
+/*<<<<<<<<<<<<*/
+.customers_review {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+   /* background-color: red;*/
+}
+.c_r {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+.f5th {
+    background-color: darkorange;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.all_customers_review {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 9%;
+}
+#card4 {
+    width: 30%;
+    height: 350px;
+    background-color: honeydew;
+    float: left;
+    margin-right: 15px;
+    border: 5px solid hsl(0, 0%, 100%);
+    box-shadow: 2px 5px 8px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#card4 > p {
+    font-size: 14px;
+    text-align: justify;
+}
+.cstmrs_name {
+    color: darkblue;
+    font-size: 30px;
+}
+.star {
+    font-size: 50px;
+    color: orange;
+}
+#card4:hover {
+  background-color: #3ecaf2ac;
+  transition: 1.5s;
+}
+
+/*<<<<<<<<<<<<*/
+  /*Our Blogs*/
+/*<<<<<<<<<<<<*/
+.our_blogs {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.o_b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+.s6th {
+    background-color: darkorange;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.all_blogs {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 9%;
+}
+#card5 {
+    width: 30%;
+    height: 400px;
+    background-color: honeydew;
+    float: left;
+    margin-right: 15px;
+    border: 5px solid hsl(0, 0%, 100%);
+    box-shadow: 2px 5px 8px gray;
+    border-radius: 5px;
+}
+.left {
+    float: left;
+    font-size: small;
+}
+.right {
+    float: right;
+    font-size: small;
+}
+#card5 > a {
+    margin-left: 10px;
+    font-size: 20px;
+}
+#card5 > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+#card5:hover {
+  background-color: darkorange;
+  width: 32%;
+  height: 405px;
+  transition: 1.5s
+}
+
+/*<<<<<<<<<<<<*/
+  /*Footer*/
+/*<<<<<<<<<<<<*/
+footer {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: honeydew;
+}
+.n_F {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+.s7th {
+    background-color: darkorange;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.abouts_item {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    left: 9%;
+}
+#card6 {
+    width: 22%;
+    height: 400px;
+    /*background-color: honeydew;*/
+    float: left;
+    margin-right: 15px;
+    /**border: 5px solid hsl(0, 0%, 100%);*/
+    /*box-shadow: 2px 5px 8px gray;*/
+    /*border-radius: 5px;*/
+    margin-bottom: 20px;
+}
+#card6 > p > a {
+    color: gray;
+    text-decoration: none;
+}
+.getter {
+    color: darkorange;
+}
+#card6 > p {
+    line-height: 50px;
+}
+
+.last_line {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    color: darkblue;
+}
+.created {
+    color: darkorange;
+}
+#card6 > #link > a {
+  padding:5px 10px;
+  margin-right: 5px;
+  border-radius: 100%;
+  background-color: darkorange;
+  color: darkblue;
+  font-weight: bold;
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+          <h1>NF<span class="NFooD">oo</span>D</h1>
+          <ul>
+             <li> <a href="#"> Home </a> 
+             </li>
+             <li><a href="#"> Products </a> </li>
+             <li><a href="#"> Features </a> </li>
+             <li><a href="#"> Categories </a> </li>
+             <li><a href="#"> Reviews </a> </li>
+             <li><a href="#"> Blogs </a> 
+             </li>
+          </ul>
+        </nav>
+        <div class="content">
+            <p><b class="first_line">Fresh And <span class="first_line_word">Organic</span> Products For You</b> <br><br>
+                <span class="h_c">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatem  
+                    adipisci <br> delectus consequuntur error ipsum
+                    facilis praesentium.</span>
+                    <br><br><br>
+                    <a href="#" class="Shop_btn">Shop Now</a>
+            </p>
+
+            
+        </div>
+    </header>
+ 
+    <!--//////////-->
+     <!--Features-->
+    <!--//////////-->
+    <div class="features">
+        <p class="o_f">
+            <b class="our">
+                Our <span class="second">Feature</span>
+            </b>
+        </p>
+
+        <div class="all_services">
+            <div class="fresh" id="card">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh And Organic</h1><br>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisici fugiat, quia omnis sunt 
+                    aecati ex.
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Read More</a>
+                </p>
+
+            </div>
+
+            <div class="free" id="card">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Free Delivery</h1><br>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisici fugiat, quia omnis sunt 
+                    aecati ex.
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Read More</a>
+                </p>
+            </div>
+
+            <div class="easy" id="card">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Easy payments</h1><br>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisici fugiat, quia omnis sunt 
+                    aecati ex.
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--//////////-->
+     <!--Product-->
+    <!--//////////-->
+    <div class="product">
+        <p class="o_p">
+            <b class="our2">
+                Our <span class="third">Product</span>
+            </b>
+        </p>
+
+        <div class="all_products">
+            <div class="onion" id="card2">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh Onion</h1><br>
+                <p style="text-align: center;">$5-10 <br> *****
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Add To Cart</a>
+                </p>
+
+            </div>
+
+            <div class="meat" id="card2">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh Meat</h1><br>
+                <p style="text-align: center;">$5-10 <br> *****
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Add To Cart</a>
+                </p>
+            </div>
+
+            <div class="cabbage" id="card2">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh cabbage</h1><br>
+                <p style="text-align: center;">$5-10 <br> *****
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Add To Cart</a>
+                </p>
+            </div>
+            
+
+            <div class="Avocado" id="card2">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh Avocado</h1><br>
+                <p style="text-align: center;">$5-10 <br> *****
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Add To Cart</a>
+                </p>
+
+            </div>
+
+            <div class="carrot" id="card2">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh Carrot</h1><br>
+                <p style="text-align: center;">$5-10 <br> *****
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Add To Cart</a>
+                </p>
+            </div>
+
+            <div class="Lemon" id="card2">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br> Fresh Lemon</h1><br>
+                <p style="text-align: center;">$5-10 <br> *****
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Add To Cart</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--//////////-->
+     <!--Product Categories-->
+    <!--//////////-->
+    <div class="product_categories">
+        <p class="p_c">
+            <b>
+                Product <span class="forth">Categories</span>
+            </b>
+        </p>
+
+        <div class="all_products_categories">
+
+            <div class="vagitables" id="card3">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br><br><br><br><br>vagitables</h1><br>
+                <p style="text-align: center;">Upto 45% Off<br>
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Shop Now</a>
+                </p>
+            </div>
+            <div class="fresh_fruits" id="card3">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br><br><br><br><br> Fresh Fruits</h1><br>
+                <p style="text-align: center;">Upto 45% Off<br>
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Shop Now</a>
+                </p>
+
+            </div>
+
+            <div class="dairy_products" id="card3">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br><br><br><br><br> Dairy Products</h1><br>
+                <p style="text-align: center;">Upto 45% Off<br>
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Shop Now</a>
+                </p>
+
+            </div>
+
+            <div class="fresh_meat" id="card3">
+                <h1 style="text-align: center; color: darkblue;"> <br><br><br><br><br><br><br><br> Fresh Meat</h1><br>
+                <p style="text-align: center;">Upto 45% Off<br>
+                 <br><br>   <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Shop Now</a>
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+<!--//////////-->
+     <!--Customers Review-->
+    <!--//////////-->
+    <div class="customers_review">
+        <p class="c_r">
+            <b>
+                Customer's <span class="f5th">Review</span>
+            </b>
+        </p>
+
+        <div class="all_customers_review">
+
+            <div class="john_doe" id="card4">
+                
+                <p style="text-align: center;"> <br><br><br><br><br><br><br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatem  
+                    adipisci delectus consequuntur error ipsum
+                    facilis praesentium.<br><br> <b class="cstmrs_name">John Doe</b> <br><br><span class="star">*****</span><br>
+                </p>
+            </div>
+           
+            <div class="john_deo" id="card4">
+                
+                <p style="text-align: center;"> <br><br><br><br><br><br><br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatem  
+                    adipisci delectus consequuntur error ipsum
+                    facilis praesentium.<br><br> <b class="cstmrs_name">John Dee</b> <br><br><span class="star">*****</span><br>
+                </p>
+            </div>
+
+            <div class="john_weak" id="card4">
+                
+                <p style="text-align: center;"> <br><br><br><br><br><br><br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatem  
+                    adipisci delectus consequuntur error ipsum
+                    facilis praesentium.<br><br> <b class="cstmrs_name">John Weak</b> <br><br><span class="star">*****</span><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--//////////-->
+     <!--Our Blogs-->
+    <!--//////////-->
+    <div id="our_b" class="our_blogs">
+        <p class="o_b">
+            <b class="">
+                Our <span class="s6th">Blogs</span>
+            </b>
+        </p>
+
+        <div class="all_blogs">
+            <div class="fresh_and_oraganic1" id="card5">
+                <p class="left">By User</p>
+                <p class="right">29 April, 2023</p>
+                <h1 style="text-align: left; margin-left: 5px; color: darkblue;"> <br><br><br><br><br><br> Fresh And Organic</h1><br>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisici fugiat, quia omnis sunt 
+                    aecati ex.
+                 <br><br>   
+                </p>
+                <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Read More</a>
+               
+
+            </div>
+
+            <div class="fresh_and_oraganic2" id="card5">
+                <p class="left">By User</p>
+                <p class="right">29 April, 2023</p>
+                <h1 style="text-align: left; margin-left: 5px; color: darkblue;"> <br><br><br><br><br><br>
+                Fresh And Organic</h1><br>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisici fugiat, quia omnis sunt 
+                    aecati ex.
+                 <br><br>  
+                </p>
+                 <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Read More</a>
+                
+
+            </div>
+
+            <div class="fresh_and_oraganic3" id="card5">
+                <p class="left">By User</p>
+                <p class="right">29 April, 2023</p>
+                <h1 style="text-align: left; margin-left: 5px; color: darkblue;"> <br><br><br><br><br><br> Fresh And Organic</h1><br>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisici fugiat, quia omnis sunt 
+                    aecati ex.
+                 <br><br>   
+                </p>
+                 <a style="text-decoration: none;padding: 5px 10px;border: 2px solid darkblue;" href="#">Read More</a>
+               
+
+            </div>
+            
+        </div>
+    </div>
+
+     <!--//////////-->
+    <!--Footer-->
+    <!--//////////-->
+    <footer>
+       
+
+        <div class="abouts_item">
+
+            <div class="n_Food" id="card6">
+                
+                <p id="link" style="text-align: center;"><b class="n_F">NFooD</b><br>
+                    Lorem ipsum dolor sit amet <br> consectetur adipisici fugiat, <br> quia omnis sunt 
+                    aecati. <br> 
+                    <a href="#">F</a>
+                    <a href="#">T</a>
+                    <a href="#">I</a>
+                    <a href="#">L</a>
+                 <br>
+                </p>
+            </div>
+            
+            <div class="contact" id="card6">
+                
+                <p style="text-align: center;"><b class="n_F">Contact Info</b><br>
+                    +121-388-3732 <br>
+                    +111-233-7360<br>
+                    demo123@gmail.com<br> 
+                    Dhaka-Bangladesh-1122<br>
+                </p>
+            </div>
+
+            <div class="links" id="card6">
+                
+                <p style="text-align: center;"><b class="n_F">Quick Links</b><br>
+                      
+                    <a href="#"><span class="getter">></span> Home</a>
+                    <br>
+                    <a href="#"><span class="getter">></span> Features</a>
+                    <br>
+                    <a href="#"><span class="getter">></span> Products</a>
+                    <br>
+                    <a href="#"><span class="getter">></span> Catagories</a>
+                    <br>
+                    <a href="#"><span class="getter">></span> Review</a>
+                    <br>
+                    <a href="#" >
+                      <span class="getter">></span> Blogs</a>
+                    <br>
+                </p>
+            </div>
+
+            <div class="news" id="card6">
+                
+                <p style="text-align: center;"><b class="n_F">Newsletter</b><br>
+                    Subscribe For Latest Updates <br>
+                    <form style="margin-left: 10px;" action="">
+                     <input type="email" placeholder="your email.."> <br>
+                   <br><br>
+                     <input type="submit" value="Subscribe"> <br>
+                    </form>
+                </p>
+            </div>
+                
+        </div>
+
+        <p class="last_line">Created by <span class="created">Jahidul Islam</span> | All rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
